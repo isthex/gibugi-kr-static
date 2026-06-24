@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>카카오뱅크 입출금내역 조회 출력 PDF 저장 | 기부기</title>
+<meta name="description" content="요즘 많은 분들이 카카오뱅크를 이용하면서 가장 궁금해하는 것 중 하나가 바로 ‘카카오뱅크 입출금내역’ 확인과 출력 방법입니다. 카카오뱅크는 100% 모바일 기반 은행으로, 기존 시중은행에서 쉽게 이용하던 통장이나 영업점 방문 없이도 간편하게 거래내역을 확인할 수 있지만, 인쇄나 증빙서류">
+<link rel="canonical" href="https://gibugi.kr/카카오뱅크-입출금내역-조회-출력-pdf-저장/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230e7c7b'/><text x='50' y='72' font-size='62' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='800'>G</text></svg>">
+<meta property="og:type" content="article">
+<meta property="og:title" content="카카오뱅크 입출금내역 조회 출력 PDF 저장">
+<meta property="og:description" content="요즘 많은 분들이 카카오뱅크를 이용하면서 가장 궁금해하는 것 중 하나가 바로 ‘카카오뱅크 입출금내역’ 확인과 출력 방법입니다. 카카오뱅크는 100% 모바일 기반 은행으로, 기존 시중은행에서 쉽게 이용하던 통장이나 영업점 방문 없이도 간편하게 거래내역을 확인할 수 있지만, 인쇄나 증빙서류">
+<meta property="og:url" content="https://gibugi.kr/카카오뱅크-입출금내역-조회-출력-pdf-저장/">
+<meta property="og:image" content="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271200%27%20height%3D%27630%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%25230e7c7b%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%25233162e0%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%271200%27%20height%3D%27630%27%20fill%3D%27url%28%2523g%29%27%2F%3E%3Crect%20x%3D%2780%27%20y%3D%27100%27%20width%3D%2740%27%20height%3D%276%27%20fill%3D%27%2523d4a24c%27%2F%3E%3Ctext%20x%3D%2780%27%20y%3D%27200%27%20font-size%3D%2772%27%20fill%3D%27white%27%20font-family%3D%27Noto%20Sans%20KR%2Csans-serif%27%20font-weight%3D%27800%27%3E%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC%20%EC%9E%85%EC%B6%9C%EA%B8%88%EB%82%B4%EC%97%AD%20%EC%A1%B0%ED%9A%8C%20%EC%B6%9C%EB%A0%A5%3C%2Ftext%3E%3Ctext%20x%3D%2780%27%20y%3D%27290%27%20font-size%3D%2772%27%20fill%3D%27white%27%20font-family%3D%27Noto%20Sans%20KR%2Csans-serif%27%20font-weight%3D%27800%27%3EPDF%20%EC%A0%80%EC%9E%A5%3C%2Ftext%3E%3Ctext%20x%3D%2780%27%20y%3D%27560%27%20font-size%3D%2728%27%20fill%3D%27%2523d4a24c%27%20font-family%3D%27sans-serif%27%3Egibugi.kr%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" href="https://gibugi.kr/feed.xml" title="기부기">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "카카오뱅크 입출금내역 조회 출력 PDF 저장", "url": "https://gibugi.kr/카카오뱅크-입출금내역-조회-출력-pdf-저장/", "datePublished": "2026-02-06T03:11:11", "dateModified": "2026-02-06T03:11:11", "description": "요즘 많은 분들이 카카오뱅크를 이용하면서 가장 궁금해하는 것 중 하나가 바로 ‘카카오뱅크 입출금내역’ 확인과 출력 방법입니다. 카카오뱅크는 100% 모바일 기반 은행으로, 기존 시중은행에서 쉽게 이용하던 통장이나 영업점 방문 없이도 간편하게 거래내역을 확인할 수 있지만, 인쇄나 증빙서류", "author": {"@type": "Person", "name": "기부기"}, "publisher": {"@type": "Organization", "name": "기부기", "logo": {"@type": "ImageObject", "url": "https://gibugi.kr/"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://gibugi.kr/카카오뱅크-입출금내역-조회-출력-pdf-저장/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "기부기", "item": "https://gibugi.kr/"}, {"@type": "ListItem", "position": 2, "name": "카카오뱅크 입출금내역 조회 출력 PDF 저장", "item": "https://gibugi.kr/카카오뱅크-입출금내역-조회-출력-pdf-저장/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "카카오뱅크 입출금내역을 모바일에서 바로 출력할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "카카오뱅크는 모바일 전용 은행이기 때문에 앱 내에서 바로 출력 기능은 제공하지 않습니다. 다만, 거래내역을 PDF로 저장한 후 PC 또는 스마트폰에서 출력하는 방식으로 처리할 수 있습니다. PDF 저장 기능은 증빙서류로도 인정받기 때문에 가장 추천하는 방법입니다."}}, {"@type": "Question", "name": "입출금내역 팩스 발급은 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "카카오뱅크 자체에서는 팩스 발급 서비스를 제공하지 않지만, 거래내역을 PDF로 저장한 뒤 스마트폰 팩스 앱이나 PC 팩스 프로그램을 통해 간접적으로 팩스 전송이 가능합니다. 이 방법을 활용하면 팩스를 요구하는 기관에 입출금내역을 제출할 수 있으니 참고하세요."}}]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5883889828782515" crossorigin="anonymous"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Noto Sans KR", sans-serif; line-height: 1.75;
+    max-width: 780px; margin: 0 auto; padding: 24px 20px 80px;
+    color: #2c2c2c; background: #fafafa; }
+  a { color: #3162e0; }
+  header.post { border-bottom: 1px solid #e8e8e8; padding-bottom: 16px; margin-bottom: 20px; }
+  header.post h1 { font-size: 28px; line-height: 1.4; margin: 0 0 10px; font-weight: 800;
+    color: #111; letter-spacing: -0.02em; }
+  header.post .meta { color: #888; font-size: 13px; }
+  /* 글 페이지 상단 — 이전글/다음글 네비 (제목 + 링크) */
+  .post-nav { display: flex; justify-content: space-between; gap: 12px;
+    margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e8e8e8; }
+  .post-nav a { display: flex; flex-direction: column; gap: 4px;
+    text-decoration: none; padding: 10px 12px; border-radius: 8px;
+    transition: background .15s; flex: 1; min-width: 0; max-width: 48%; }
+  .post-nav a:hover { background: #f0f4ff; }
+  .post-nav .nav-prev { margin-right: auto; }
+  .post-nav .nav-next { margin-left: auto; text-align: right; }
+  .post-nav .nav-label { font-size: 11px; color: #9ca3af; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.3px; }
+  .post-nav .nav-title { font-size: 14px; color: #1a1a1a; font-weight: 600;
+    line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden; }
+  .intro { font-size: 16px; background: #fff; border-radius: 10px; padding: 16px 20px;
+    border: 1px solid #e8e8e8; margin: 20px 0; }
+  .intro p { margin: 0; }
+  .toc { background: #fff; border: 1px solid #e8e8e8; border-radius: 10px;
+    padding: 14px 20px; margin: 20px 0; }
+  .toc-title { font-size: 14px; font-weight: 700; color: #444; margin-bottom: 8px; }
+  .toc ul { list-style: none; padding: 0; margin: 0; }
+  .toc li { margin: 4px 0; font-size: 14px; }
+  .toc li.toc-sub { padding-left: 16px; font-size: 13px; }
+  .toc a { text-decoration: none; color: #3162e0; }
+  .toc a:hover { text-decoration: underline; }
+  article { font-size: 16px; }
+  article p { margin: 14px 0; }
+  article h2 { font-size: 22px; margin: 40px 0 14px; padding: 6px 0 6px 14px;
+    border-left: 4px solid #3162e0; background: linear-gradient(90deg, #f0f4ff 0%, transparent 100%);
+    font-weight: 800; color: #15296b; scroll-margin-top: 16px; }
+  article h3 { font-size: 18px; margin: 28px 0 10px; color: #1a3aa0; font-weight: 700;
+    scroll-margin-top: 16px; }
+  article h3::before { content: "▸ "; color: #3162e0; }
+  article table, article .wp-block-table { width: 100%; border-collapse: collapse;
+    margin: 18px 0; background: #fff; border-radius: 8px; overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06); font-size: 14px; }
+  article table th, article table td { padding: 10px 12px; text-align: left;
+    border-bottom: 1px solid #eaeaea; vertical-align: top; }
+  article table th { background: #f5f7fa; font-weight: 700; color: #15296b;
+    border-bottom: 2px solid #d8dde7; }
+  article ul, article ol { padding-left: 22px; }
+  article li { margin: 4px 0; }
+  article a { text-decoration: underline; }
+  article img { max-width: 100%; height: auto; }
+  .smart-button-container { background: #fff7ed; border: 1px solid #fed7aa;
+    border-radius: 10px; padding: 14px 18px; margin: 20px 0; }
+  .smart-button-container a { display: inline-block; padding: 8px 16px; background: #ff6a3d;
+    color: #fff !important; border-radius: 6px; text-decoration: none !important;
+    font-weight: 600; margin-top: 6px; font-size: 14px; }
+  .ad-slot { display: block; width: 100%; border-radius: 12px; overflow: hidden;
+    text-decoration: none; background: linear-gradient(135deg, #0891B2, #164E63);
+    color: #fff; position: relative; transition: transform .15s, box-shadow .15s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); margin: 24px 0; }
+  .ad-slot.banner-wide { aspect-ratio: 4/1; max-width: 800px; margin: 20px auto; }
+  .ad-slot .ad-inner { position: absolute; inset: 0; padding: 16px 22px; display: flex;
+    flex-direction: column; justify-content: center; align-items: flex-start;
+    text-align: left; background: rgba(0,0,0,0); }
+  .ad-slot.has-image .ad-inner { background: linear-gradient(90deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 60%, rgba(0,0,0,0) 100%); }
+  .ad-slot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .ad-slot .ad-inner { z-index: 1; }
+  .ad-slot .ad-label { position: absolute; top: 6px; right: 10px; font-size: 10px;
+    font-weight: 700; color: rgba(255,255,255,.7); background: rgba(0,0,0,.25);
+    padding: 2px 6px; border-radius: 4px; z-index: 2; }
+  .ad-slot .ad-title { font-size: 18px; font-weight: 800; line-height: 1.3; letter-spacing: -.2px; }
+  .ad-slot .ad-subtitle { font-size: 13px; opacity: 0.9; margin-top: 2px; }
+  .ad-slot .ad-cta { display: inline-block; margin-top: 8px; padding: 6px 14px;
+    background: #fff; color: #15296b; border-radius: 20px; font-size: 12px; font-weight: 700; }
+  .ad-slot.banner-wide .ad-title, .ad-slot.banner-wide .ad-subtitle,
+  .ad-slot.banner-wide .ad-cta { max-width: 55%; }
+  .ad-slot.kakao-channel { background: #FEE500; border-color: rgba(0,0,0,0.12); }
+  .ad-slot.kakao-channel .ad-title { color: #3C1E1E; }
+  .ad-slot.kakao-channel .ad-subtitle { color: rgba(60,30,30,0.82); }
+  .ad-slot.kakao-channel .ad-label { background: #3C1E1E; color: #FEE500; }
+  .ad-slot.kakao-channel .ad-cta { background: #3C1E1E; color: #FEE500; }
+  @media (max-width: 600px) {
+    .ad-slot.banner-wide { aspect-ratio: auto; min-height: 120px; }
+    .ad-slot.banner-wide .ad-inner { position: relative; inset: auto; padding: 14px 18px; }
+    .ad-slot.banner-wide .ad-title, .ad-slot.banner-wide .ad-subtitle, .ad-slot.banner-wide .ad-cta { max-width: 100%; }
+    .ad-slot.banner-wide .ad-title { font-size: 16px; line-height: 1.3; }
+    .ad-slot.banner-wide .ad-subtitle { font-size: 12px; line-height: 1.4; }
+  }
+  .post-list { background: #fff; border: 1px solid #e8e8e8; border-radius: 10px;
+    padding: 18px 22px; margin: 20px 0; }
+  .post-list h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; color: #444;
+    padding-bottom: 8px; border-bottom: 1px solid #eee; }
+  .post-list ul { list-style: none; padding: 0; margin: 0; }
+  .post-list li { padding: 10px 0; border-bottom: 1px dashed #eee; display: flex;
+    justify-content: space-between; gap: 12px; font-size: 14px; }
+  .post-list a { text-decoration: none; color: #2c2c2c; flex: 1; }
+  .post-list .date { color: #999; font-size: 12px; white-space: nowrap; }
+  footer { margin-top: 50px; padding-top: 18px; border-top: 1px solid #e8e8e8;
+    color: #aaa; font-size: 13px; text-align: center; }
+  footer a { color: #3162e0; margin: 0 6px; }
+  @media (max-width: 600px) {
+    body { padding: 16px 14px 60px; }
+    header.post h1 { font-size: 22px; }
+    article h2 { font-size: 19px; }
+    article table { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<nav class="post-nav"><a class="nav-prev" href="/덕수궁-돈덕전-재개관-역사-복원-외교-문화/" rel="prev"><span class="nav-label">← 이전글</span><span class="nav-title">덕수궁 돈덕전 재개관 역사 복원 외교 문화</span></a><a class="nav-next" href="/대관령-눈꽃썰매장-예매-온라인-예약-현장-발권-숙소/" rel="next"><span class="nav-label">다음글 →</span><span class="nav-title">대관령 눈꽃썰매장 예매 온라인 예약 현장 발권 숙소</span></a></nav>
+<header class="post">
+  <h1>카카오뱅크 입출금내역 조회 출력 PDF 저장</h1>
+  <div class="meta">발행: 2026-02-06</div>
+</header>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5883889828782515" data-ad-slot="6656858050" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+<div class="intro"><p>요즘 많은 분들이 카카오뱅크를 이용하면서 가장 궁금해하는 것 중 하나가 바로 ‘카카오뱅크 입출금내역’ 확인과 출력 방법입니다. 카카오뱅크는 100% 모바일 기반 은행으로, 기존 시중은행에서 쉽게 이용하던 통장이나 영업점 방문 없이도 간편하게 거래내역을 확인할 수 있지만, 인쇄나 증빙서류 발급 과정에서는 조금 낯설고 헷갈리는 부분들이 많죠. 이 글에서는 카카오뱅크 입출금내역 조회부터 PDF 저장, 출력, 팩스발급 방법까지 전문가 수준의 자세한 정보를 친구에게 쉽게 설명하듯 전해드리겠습니다. 특히 급여 확인이나 대출 신청, 계약서 제출 등 입출금내역서가 필요할 때 가장 효율적으로 준비하는 팁을 함께 알려드릴게요.</p></div>
+<div class="smart-button-container smart-button-1">
+<div style="margin-bottom: 10px;font-weight: 500;color: #ff0000;font-size: 14px">📎 관련 정보</div>
+<p><a href="https://m.kakaobank.com/FaqView/view/9413" rel="noopener noreferrer" class="smart-button smart-button-new">카카오뱅크 거래내역 엑셀 받기</a></p>
+</div>
+<nav class="toc"><div class="toc-title">📑 목차</div><ul><li><a href="#카카오뱅크-입출금내역-확인-방법">카카오뱅크 입출금내역 확인 방법</a></li><li class="toc-sub"><a href="#구체적인-조회-절차">구체적인 조회 절차</a></li><li class="toc-sub"><a href="#입출금내역-조회-시-유의사항">입출금내역 조회 시 유의사항</a></li><li><a href="#카카오뱅크-입출금내역-출력-및-pdf-저장-방법">카카오뱅크 입출금내역 출력 및 PDF 저장 방법</a></li><li class="toc-sub"><a href="#pdf-저장-절차">PDF 저장 절차</a></li><li class="toc-sub"><a href="#출력-시-주의할-점">출력 시 주의할 점</a></li><li><a href="#카카오뱅크-입출금내역-팩스-발급-방법">카카오뱅크 입출금내역 팩스 발급 방법</a></li><li class="toc-sub"><a href="#팩스-발급-절차-및-준비물">팩스 발급 절차 및 준비물</a></li><li class="toc-sub"><a href="#비용-및-제한사항">비용 및 제한사항</a></li><li><a href="#카카오뱅크-입출금내역서-활용과-주의사항">카카오뱅크 입출금내역서 활용과 주의사항</a></li><li class="toc-sub"><a href="#자주-발생하는-문제와-해결법">자주 발생하는 문제와 해결법</a></li><li class="toc-sub"><a href="#카카오뱅크-거래내역서-발급-비교표">카카오뱅크 거래내역서 발급 비교표</a></li><li><a href="#자주-묻는-질문">자주 묻는 질문</a></li><li class="toc-sub"><a href="#카카오뱅크-입출금내역을-모바일에서-바로-출력할-수-있나요">카카오뱅크 입출금내역을 모바일에서 바로 출력할 수 있나요?</a></li><li class="toc-sub"><a href="#입출금내역-팩스-발급은-어떻게-하나요">입출금내역 팩스 발급은 어떻게 하나요?</a></li></ul></nav>
+<div class="ad-slot banner-wide kakao-channel" data-slot="kakao_top" data-ad-type="kakao-channel"></div>
+<article><h2 id="카카오뱅크-입출금내역-확인-방법">카카오뱅크 입출금내역 확인 방법</h2>
+<p>카카오뱅크 입출금내역은 모바일 앱을 통해 언제 어디서나 빠르게 조회할 수 있습니다. 일반 은행과 달리 실물 통장이 없기 때문에, 앱 내 ‘내 계좌’ 메뉴에서 원하는 계좌를 선택한 뒤 거래내역을 확인하는 방식입니다. 조회 가능한 기간도 기본적으로 최근 3개월에서 1년까지 설정할 수 있어 필요에 따라 세부기간 조절이 가능합니다. 특히 카카오뱅크는 입출금 내역을 실시간으로 반영해 최신 거래 상황을 즉시 확인할 수 있다는 점이 매우 편리합니다. 다만, 거래내역을 출력하거나 증빙용으로 사용할 때는 몇 가지 주의사항이 있습니다.</p>
+<h3 id="구체적인-조회-절차">구체적인 조회 절차</h3>
+<p>먼저 카카오뱅크 앱에 로그인한 후 하단 메뉴에서 ‘내 계좌’를 선택합니다. 이후 내역을 보고 싶은 계좌를 탭 하면, 최근 입출금 내역이 날짜 순으로 나열됩니다. 원하는 날짜 범위를 지정하려면 ‘거래내역 조회’ 또는 ‘기간 설정’ 옵션을 이용하면 되고, 검색 기능을 통해 특정 키워드가 포함된 거래만 필터링할 수도 있습니다. 이렇게 조회한 내역은 스크린샷 저장 또는 PDF 파일로 변환해 보관할 수 있습니다.</p>
+<h3 id="입출금내역-조회-시-유의사항">입출금내역 조회 시 유의사항</h3>
+<p>입출금내역을 정확히 확인하려면 조회 기간 설정이 매우 중요합니다. 예를 들어, 대출 심사나 관공서 제출용으로는 일반적으로 최근 3개월 또는 6개월 내역을 요구하는 경우가 많으므로, 해당 기간을 선택해야 합니다. 거래내역이 많을 경우 일부 항목이 누락될 수 있으니, 기간을 세분화해 여러 번 나눠서 조회하는 것도 좋은 방법입니다. 특히 월말이나 공휴일에는 데이터 반영이 다소 지연될 수 있으니 참고하세요.</p>
+<h2 id="카카오뱅크-입출금내역-출력-및-pdf-저장-방법">카카오뱅크 입출금내역 출력 및 PDF 저장 방법</h2>
+<p>카카오뱅크는 100% 모바일 뱅킹 서비스이기 때문에, PC에서 바로 출력하는 전통적인 인터넷뱅킹과 달리 앱 내에서 PDF 저장 기능을 활용하는 방식이 주를 이룹니다. PDF로 저장한 후에는 이메일 전송이나 USB 복사, 클라우드 저장을 통해 필요할 때 인쇄할 수 있습니다. 이 과정에서 증빙용 거래내역서로 인정받기 위한 몇 가지 팁도 함께 알려드릴게요.</p>
+<h3 id="pdf-저장-절차">PDF 저장 절차</h3>
+<p>입출금내역을 PDF로 저장하려면, 카카오뱅크 앱에서 거래내역 화면으로 이동 후 ‘내보내기’ 또는 ‘저장’ 메뉴를 찾습니다. 보통 우측 상단의 메뉴 버튼(점 3개)을 눌러 ‘PDF 저장’ 옵션을 선택할 수 있습니다. 저장 시에는 거래내역 전체와 해당 기간, 계좌번호, 은행명, 본인 이름 등이 명확히 포함되어야 하며, 은행 공식 로고가 들어가 있어야 증빙서류로 인정받기 쉽습니다. 저장한 PDF 파일은 스마트폰 내 ‘문서’ 앱이나 파일 관리자에서 확인하고, 필요 시 이메일 등으로 전송하여 PC에서 출력할 수 있습니다.</p>
+<h3 id="출력-시-주의할-점">출력 시 주의할 점</h3>
+<p>PDF 파일을 출력할 때는 반드시 거래내역서가 명확히 보이도록 인쇄 품질과 크기를 조절하세요. 모임, 대출, 임대 계약 등의 공식 서류로 사용할 때는 거래내역서에 은행명과 계좌번호, 거래내역 기간, 거래금액이 분명히 드러나야 합니다. 만약 PDF 저장 메뉴가 앱에 없거나 작동하지 않을 경우, 화면 캡처 후 이미지 파일을 인쇄하는 방법도 있으나, 이 경우 증빙 효력이 다소 떨어질 수 있으니 가급적 공식 PDF 저장 기능을 이용하는 것이 안전합니다.</p>
+
+<ins class="adsbygoogle" style="display:block;margin:24px 0" data-ad-client="ca-pub-5883889828782515" data-ad-slot="6656858050" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+<h2 id="카카오뱅크-입출금내역-팩스-발급-방법">카카오뱅크 입출금내역 팩스 발급 방법</h2>
+<p>요즘은 팩스 사용 빈도가 줄었지만, 일부 기관에서는 입출금 내역을 팩스로 접수하기도 합니다. 카카오뱅크에서 공식적으로 팩스 발급을 지원하지는 않지만, 거래내역 PDF를 팩스기로 전송하는 방식으로 해결할 수 있습니다. 스마트폰 팩스 앱이나 PC 팩스 프로그램을 활용해 PDF 파일을 팩스로 보낼 수 있으니, 간접적인 방법을 알아둬야 합니다.</p>
+<h3 id="팩스-발급-절차-및-준비물">팩스 발급 절차 및 준비물</h3>
+<p>우선 카카오뱅크 앱에서 입출금내역을 PDF로 저장한 뒤, 스마트폰용 팩스 앱(예: 팩스플러그, 팩스큐 등)을 설치합니다. 앱을 실행해 PDF 파일을 불러온 후, 팩스 받는 곳의 번호를 입력하고 전송하면 됩니다. 이 과정에서 팩스 번호가 정확한지 재차 확인하는 것이 중요합니다. 만약 PC에서 팩스 기능이 있는 프린터를 사용한다면, 동일한 방식으로 PDF 파일을 선택 후 팩스 전송을 진행할 수 있습니다.</p>
+<h3 id="비용-및-제한사항">비용 및 제한사항</h3>
+<p>팩스 전송 시 일부 앱은 무료로 기본 전송 횟수를 제공하지만, 초과 시 소액 요금이 부과될 수 있으니 사용 전 요금 정책을 확인하세요. 또한, 팩스 전송 과정에서 파일이 정상적으로 전송되었는지 반드시 확인해야 하며, 증빙 목적으로 팩스 전송 확인서를 요청할 수 있다면 더 안전합니다. 카카오뱅크 자체에서 직접 팩스 서비스를 제공하지 않으니 이런 간접적인 방법을 활용하는 것이 현실적인 대안입니다.</p>
+<h2 id="카카오뱅크-입출금내역서-활용과-주의사항">카카오뱅크 입출금내역서 활용과 주의사항</h2>
+<p>카카오뱅크 입출금내역서는 급여 확인, 대출 심사, 임대차 계약 등 다양한 상황에서 필수 서류로 활용됩니다. 모바일 기반 은행이기 때문에 언제 어디서든 쉽게 확인할 수 있지만, 서류 제출 시에는 원본 증빙으로 인정받을 수 있는 형태로 준비하는 것이 매우 중요합니다. 특히 입출금내역서에는 본인 이름, 계좌번호, 거래내역 기간, 거래 내역 상세 정보 등이 명확히 들어가 있어야 하며, 은행 공인 문서임을 알 수 있는 로고나 문구가 포함되어야 합니다.</p>
+<h3 id="자주-발생하는-문제와-해결법">자주 발생하는 문제와 해결법</h3>
+<p>가장 흔한 문제는 거래내역 화면을 단순 스크린샷으로 제출할 경우, 공공기관이나 금융기관에서 증빙 서류로 인정받지 못하는 경우입니다. 따라서 반드시 PDF 저장 기능을 이용하거나, 카카오뱅크 고객센터를 통해 공식적인 증명서 발급 방법을 안내받는 것이 좋습니다. 또 한가지 주의할 점은 입출금내역 조회 시 비밀번호나 보안 인증 절차를 정확히 거쳐야 하며, 공용 와이파이 이용 시 개인정보 유출 위험이 있으므로 주의가 필요합니다.</p>
+<h3 id="카카오뱅크-거래내역서-발급-비교표">카카오뱅크 거래내역서 발급 비교표</h3>
+<table class="wp-block-table">
+<thead>
+<tr>
+<th>발급 방법</th>
+<th>절차</th>
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>앱 내 PDF 저장</td>
+<td>앱 로그인 → 거래내역 조회 → PDF 저장</td>
+<td>간편, 언제든 가능, 공식 문서 인정</td>
+<td>초기 메뉴 찾기 어려움, 출력 별도 필요</td>
+</tr>
+<tr>
+<td>팩스 전송 (간접)</td>
+<td>PDF 저장 후 팩스 앱 또는 PC 팩스 전송</td>
+<td>팩스 제출 가능, 즉시 전송 가능</td>
+<td>팩스 비용 발생 가능, 전송 오류 위험</td>
+</tr>
+<tr>
+<td>고객센터 문의</td>
+<td>전화 문의 후 안내에 따라 발급</td>
+<td>공식 확인 가능, 어려움 해소</td>
+<td>대기 시간 발생, 일부 불가 서비스</td>
+</tr>
+</tbody>
+</table>
+<h2 id="자주-묻는-질문">자주 묻는 질문</h2>
+<h3 id="카카오뱅크-입출금내역을-모바일에서-바로-출력할-수-있나요">카카오뱅크 입출금내역을 모바일에서 바로 출력할 수 있나요?</h3>
+<p>카카오뱅크는 모바일 전용 은행이기 때문에 앱 내에서 바로 출력 기능은 제공하지 않습니다. 다만, 거래내역을 PDF로 저장한 후 PC 또는 스마트폰에서 출력하는 방식으로 처리할 수 있습니다. PDF 저장 기능은 증빙서류로도 인정받기 때문에 가장 추천하는 방법입니다.</p>
+<h3 id="입출금내역-팩스-발급은-어떻게-하나요">입출금내역 팩스 발급은 어떻게 하나요?</h3>
+<p>카카오뱅크 자체에서는 팩스 발급 서비스를 제공하지 않지만, 거래내역을 PDF로 저장한 뒤 스마트폰 팩스 앱이나 PC 팩스 프로그램을 통해 간접적으로 팩스 전송이 가능합니다. 이 방법을 활용하면 팩스를 요구하는 기관에 입출금내역을 제출할 수 있으니 참고하세요.</p>
+</article>
+<div class="post-list"><h3>🔗 관련글</h3><ul><li><a href="/t-1-결제-시스템-변경-한국-금융시장-증권-거래-인프라/">T 1 결제 시스템 변경 한국 금융시장 증권 거래 인프라 경쟁력</a><span class="date">2026-06-24</span></li><li><a href="/비트코인-1억-붕괴-글로벌-금리-인상-증시-랠리-위험-자/">비트코인 1억 붕괴 글로벌 금리 인상 증시 랠리 위험 자산 회피</a><span class="date">2026-06-24</span></li><li><a href="/금값-하락-투자-찬스-글로벌-경제-금리-인상-달러-강세/">금값 하락 투자 찬스 글로벌 경제 금리 인상 달러 강세</a><span class="date">2026-06-23</span></li><li><a href="/엔화-환율-2025년-예측-일본금리-인상-글로벌경제-불확실/">엔화 환율 2025년 예측 일본금리 인상 글로벌경제 불확실성 미국 금리 차이</a><span class="date">2026-06-23</span></li><li><a href="/청년미래적금-수익률-전략-정부-지원금-세제-혜택-만/">청년미래적금 수익률 전략 정부 지원금 세제 혜택 만기 유지 갈아타기 포트폴리오</a><span class="date">2026-06-22</span></li></ul></div>
+<div class="ad-slot banner-wide" data-slot="project_bottom"></div>
+<footer>
+  <a href="/">홈</a> · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="https://love.ledgolf.kr/" target="_blank">love.ledgolf.kr</a> · <a href="https://home.8949ok.kr/" target="_blank">HOMEFAN</a> · <a href="https://neo.8949ok.kr/" target="_blank">네오 블로거</a> · <a href="https://on.o2u.kr/" target="_blank">on.o2u.kr</a> · <a href="https://view.o2u.kr/" target="_blank">VIEW</a>
+</footer>
+<script src="https://isthex.github.io/00_controltower/ads/ad-loader.js"></script>
+</body>
+</html>
